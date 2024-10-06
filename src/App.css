@@ -1,0 +1,66 @@
+:root {
+  --color-principal: #1C3661;
+  --color-secondary: #3EC0F0;
+  --color-background: #121E2C;
+  --color-software: #4A90E2;
+  --color-web: #A97FFF;
+  --color-movil: #6FCF97;
+  --color-ciberseguridad: #E74C3C;
+  --color-infraestructura: #95A5A6;
+  --color-cloud: #5DADE2;
+  --color-software-ic: #244871;
+  --color-web-ic: #54407F;
+  --color-movil-ic: #37804B;
+  --color-ciberseguridad-ic: #73261E;
+  --color-infraestructura-ic: #4A5253;
+  --color-clud-ic: #2E576F;
+
+}
+
+.container {
+  min-height: 100vh;
+  position: relative;
+}
+
+* {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'lato';
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0E1417;
+  color: white;
+  margin: auto;
+  width: 100vw !important;
+  height: 100%;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Animación de zoom */
+@keyframes zoom-in-out {
+  0% {
+      transform: translateX(-50%) scale(1); /* Sin zoom */
+  }
+  50% {
+      transform: translateX(-50%) scale(1.4); /* Zoom al 10% */
+  }
+  100% {
+      transform: translateX(-50%) scale(1); /* Vuelve al tamaño original */
+  }
+}

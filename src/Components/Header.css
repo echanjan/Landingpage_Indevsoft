@@ -1,0 +1,100 @@
+@import url(../App.css);
+
+.header {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.header .logo {
+  width: auto;
+  height: 32px;
+}
+
+.side-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  /* background-color: #333; */
+  color: #fff;
+  z-index: 1;
+  width: 1300px;
+}
+
+.background {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+  background-repeat: repeat-x;
+}
+
+/* .design-header {
+    width: 100vw;
+} */
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-background);
+  width: 120px;
+  height: 30px;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.contact::before, .contact::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+  border-radius: 10px;
+  transition: opacity 0.4s ease-in-out; /* Transición suave */
+}
+
+.contact::before {
+  background: linear-gradient(to right, var(--color-principal), var(--color-secondary));
+  opacity: 1; /* Elemento visible inicialmente */
+}
+
+.contact::after {
+  background: linear-gradient(to left, var(--color-principal), var(--color-secondary));
+  opacity: 0; /* Elemento oculto inicialmente */
+}
+
+.contact:hover::before {
+  opacity: 0; /* Elimina la visibilidad del primer pseudo-elemento */
+}
+
+.contact:hover::after {
+  opacity: 1; /* Muestra el segundo pseudo-elemento */
+}
+
+
+.list-options ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.list-options ul li {
+  display: inline-block;
+
+}
+
+.list-options ul li a {
+  transition: text-decoration 0.3s ease; /* Suave transición para el hover */
+}
+
+.list-options ul li a:hover {
+  text-decoration: underline; /* Añade subrayado solo al pasar el ratón */
+}
+

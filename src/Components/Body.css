@@ -1,0 +1,185 @@
+@import url(../App.css);
+
+.features {}
+
+.features h2 {
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+
+.container-card {
+    display: grid;
+    grid-template-columns: repeat(3, 270px);
+    /* 3 columnas de 250px cada una */
+    justify-content: center;
+    /* Centra el grid horizontalmente */
+    gap: 50px;
+    /* Espacio entre las tarjetas */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 270px;
+    height: 270px;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: var(--color-background);
+    border: 2px solid transparent;
+    /* Borde transparente */
+    background-clip: padding-box;
+    /* Asegura que el fondo no cruce el borde */
+    position: relative;
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); */
+    /* Sombra más definida */
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    border-radius: 25px;
+    background: linear-gradient(rgba(255, 255, 255, 0.704), transparent);
+    transition: box-shadow 0.5s ease;
+}
+
+.software {
+    box-shadow: 0 0px 8px var(--color-software);
+}
+
+.web {
+    box-shadow: 0 0px 8px var(--color-web);
+}
+
+.movil {
+    box-shadow: 0 0px 8px var(--color-movil);
+}
+
+.ciberseguridad {
+    box-shadow: 0 0px 8px var(--color-ciberseguridad);
+}
+
+.infraestructura {
+    box-shadow: 0 0px 8px var(--color-infraestructura);
+}
+
+.cloud {
+    box-shadow: 0 0px 8px var(--color-cloud);
+}
+
+.software:hover::before {
+    background: linear-gradient(var(--color-software), transparent);
+    box-shadow: 0 0px 15px var(--color-software);
+}
+
+.web:hover::before {
+    background: linear-gradient(var(--color-web), transparent);
+    box-shadow: 0 0px 15px var(--color-web);
+}
+
+.movil:hover::before {
+    background: linear-gradient(var(--color-movil), transparent);
+    box-shadow: 0 0px 15px var(--color-movil);
+}
+
+.ciberseguridad:hover::before {
+    background: linear-gradient(var(--color-ciberseguridad), transparent);
+    box-shadow: 0 0px 15px var(--color-ciberseguridad);
+}
+
+.infraestructura:hover::before {
+    background: linear-gradient(var(--color-infraestructura), transparent);
+    box-shadow: 0 0px 15px var(--color-infraestructura);
+}
+
+.cloud:hover::before {
+    background: linear-gradient(var(--color-cloud), transparent);
+    box-shadow: 0 0px 15px var(--color-cloud);
+}
+
+.icon-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px !important;
+    height: 60px;
+    background-color: #ccc;
+    border-radius: 15px;
+    color: var(--color-background);
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    text-align: left;
+    /* Centramos el título */
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #d1d5db;
+    margin: 0;
+    text-align: left;
+    /* Centramos el texto */
+    overflow: auto;
+}
+
+.promotion {
+    padding: 150px 0px;
+    background-image: url('../assets/ellipse1.png');
+    /* Asegura que la imagen esté correctamente vinculada */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.button-start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    background-color: var(--color-background);
+    width: 150px;
+    height: 45px;
+    margin-top: 60px;
+    border-radius: 15px;
+}
+
+.button-start::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    border-radius: 15px;
+    background: linear-gradient(to right, var(--color-principal), var(--color-secondary));
+}
+
+.button-start h4 {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;
+    margin: 0px;
+}
+
+.whatapp-ic {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: transform 0.4s ease;
+}
+
+.whatapp-ic:hover {
+    transform: scale(1.1);
+}

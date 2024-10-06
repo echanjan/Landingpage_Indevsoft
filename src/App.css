@@ -41,9 +41,10 @@ body {
   align-items: center;
   background-color: #0E1417;
   color: white;
-  margin: auto;
-  width: 100vw !important;
+  margin: 0px !important;
+  width: 100% !important;
   height: 100%;
+  overflow-x: hidden;
 }
 
 a {

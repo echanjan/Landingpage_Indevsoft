@@ -7,7 +7,7 @@ function HeroSection() {
         <section className="hero">
             <div className="ellipse"></div> {/* La elipse con la animación */}
             <div className="hero-content">
-                <h2>Impulsa tu transformación digital <br></br> con soluciones a medida</h2>
+                <h1>Impulsa tu transformación digital <br></br> con soluciones a medida</h1>
                 <img className="cohete" src={cohete}></img>
             </div>
         </section>
